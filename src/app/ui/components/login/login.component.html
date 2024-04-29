@@ -1,0 +1,30 @@
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+<form >
+
+    <div class="username">
+      <label for="username">Kullanıcı Adı</label>
+      <input type="text" #txtUsernameOrEmail  class="form-control" id="username"  placeholder="Kullanıcı Adı veya Şifre">
+
+    </div>
+
+
+    <div class="form-group">
+      <label for="password">Şifre</label>
+      <input type="password" #txtPassword  class="form-control" id="password"  placeholder="Şifre">
+
+    </div>
+
+
+<img src="../../../../assets/facebook.png" alt="" (click)="facebookLogin()">
+
+   <br>
+
+
+    <button type="submit" class="btn btn-primary" (click)="login(txtUsernameOrEmail.value,txtPassword.value)">Submit</button>
+  </form>
+</div>
+<div class="col-md-3"></div>
+</div>

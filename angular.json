@@ -30,9 +30,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "node_modules/ngx-spinner/animations/timer.css",
+              "node_modules/ngx-toastr/toastr.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/alertifyjs/build/css/alertify.min.css",
+              "node_modules/alertifyjs/build/css/themes/semantic.min.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/jquery/dist/jquery.js","node_modules/jquery/dist/jquery.min.js","node_modules/bootstrap/dist/js/bootstrap.min.js","node_modules/alertifyjs/build/alertify.min.js"]
           },
           "configurations": {
             "production": {
@@ -93,6 +99,7 @@
               "src/assets"
             ],
             "styles": [
+              "@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -100,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "88be03be-2c4f-4066-81df-a3f162fd1cbc"
   }
 }
